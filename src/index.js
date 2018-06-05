@@ -1,17 +1,20 @@
+import 'phaser'
 
-let element = document.createElement('h1')
+import BootScene from './scenes/boot'
+import MenuScene from './scenes/menu'
 
-if (process.env.NODE_ENV !== 'production') {
-  console.log('Looks like we are in development mode!')
-  element.innerHTML = 'Looks like we are in development mode!'
-} else {
-  element.innerHTML = 'Looks like we are in production mode!'
-  console.log('Looks like we are in production mode!')
-}
+window.game = new Phaser.Game({
+  type: Phaser.AUTO,
+  parent: 'content',
+  width: 800,
+  height: 600,
+  canvas: document.getElementById('game'),
+  backgroundColor: 0x000,
+  scene: [
+    BootScene,
+    MenuScene
+  ]
+})
 
-document.body.appendChild(element)
-
-import Sample from './scenes/sample'
-
-let instance = new Sample({a: 'nothing', b: 'something'})
-instance.print('that thingy is pretty!')
+document.getElementById('game').focus()
+window.focus()
