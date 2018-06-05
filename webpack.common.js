@@ -7,6 +7,20 @@ module.exports = {
   entry: {
     app: './src/index.js'
   },
+  module: {
+    rules: [
+      {
+        test:/\.js$/,
+        include: path.join(__dirname, 'src'),
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
+    ],
+  },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({

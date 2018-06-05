@@ -14,4 +14,4 @@ document.body.appendChild(element)
 import Sample from './scenes/sample'
 
 let instance = new Sample({a: 'nothing', b: 'something'})
-instance.print('that thingy')
+instance.print('that thingy is pretty!')
