@@ -1,14 +1,14 @@
 {
-  "name": "phaser3-webpack4-boilerplate",
+  "name": "hackdo-taller-phaser",
   "version": "1.0.0",
-  "description": "",
+  "description": "Taller de programación básica de videojuegos con Phaser 3 para Hackdo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
-  "author": "",
+  "author": "agar3s",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.49",

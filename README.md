@@ -1,11 +1,12 @@
-# Phaser 3 Webpack4 boilerplate
+# Taller de programación básica de videojuegos con Phaser 3 para Hackdo
 
-Simple boilerplate to start working with Phaser 3 and Webpack 4.
 
-## instructions
+
+## instrucciones
 
 `npm install`
 
 `npm run start`
 
 `npm run build`
+
