@@ -1,7 +1,6 @@
 import 'phaser'
 
-import BootScene from './scenes/boot'
-import MenuScene from './scenes/menu'
+import GameScene from './scenes/game'
 
 window.game = new Phaser.Game({
   type: Phaser.AUTO,
@@ -11,10 +10,6 @@ window.game = new Phaser.Game({
   canvas: document.getElementById('game'),
   backgroundColor: 0x000,
   scene: [
-    BootScene,
-    MenuScene
+    GameScene
   ]
 })
-
-document.getElementById('game').focus()
-window.focus()
